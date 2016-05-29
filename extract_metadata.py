@@ -20,7 +20,7 @@ original_image = a[0:sizes[0]]                                                  
 meta_image = a[sizes[0]:sizes[1]]                                               # extracts the .png metadata
 meta_text = a[sizes[1]:sizes[2]]                                                # extracts the .txt metadata
 
-with open("ORIGINAL_FILE.jpg", "wb") as f:                                      # saves the original image
+with open("ORIGINAL_IMAGE.jpg", "wb") as f:                                      # saves the original image
     f.write(original_image)
 
 with open("META_IMAGE.png", "wb") as f:                                         # saves the .png metadata
