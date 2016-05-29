@@ -30,7 +30,7 @@ Extracts back the metadata and cut-off image from the RESULT .jpg created by ins
  - note: the script will crash if the RESULT file is renamed
  
 -------------------------- EXAMPLE: HOW TO USE WITH PROVIDED SAMPLE FILES -----------------------
-$ python insert_metadata.py source_image.jpg image_metadata.png text_metadata.txt.
+$ python insert_metadata.py source_image.jpg image_metadata.png text_metadata.txt
 		- creates RESULT image, in this case named "RESULT-247696-496576-502804.jpg"
 $ python extract_metadata.py RESULT-247696-496576-502804.jpg
 		- extracts the metadata back from the RESULT file.
