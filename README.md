@@ -33,6 +33,7 @@ Extracts back the metadata and cut-off image from the RESULT .jpg created by ins
 ```
 ### arguments:
 - arg1: RESULT .jpg file created by the insert_metadata.py script.
+
 ### Output
 - ORIGINAL_IMAGE.jpg - left half of the original image
 - META_IMAGE.png - .png metadata file
