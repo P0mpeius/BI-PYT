@@ -1,5 +1,5 @@
 """insert_metadata.py
-Cuts an image vertically in half. Inserts PNG and TXT metadata.
+Cuts an image vertically in half. Inserts PNG and TXT metadata and saves the result in a separate jpg file.
 
 Usage:
     insert_metadata.py <source JPG image> <metadata PNG image> <metadata TXT file>
@@ -11,21 +11,21 @@ import os
 import sys
 
 
-def insert_metadata(infile, text, image):
+def insert_metadata(infile, image, text):
     """
     Appends txt and png metadata to a jpg file. Saves the result in a new jpg file. The new jpg file's name is "RESULT-"
     followed by a sequence of hyphen-delimited numbers, indicating byte positions where metadata elements start or end.
     :param infile: source .jpg file path
-    :param text: .txt metadata file path
     :param image: .png metadata file path
+    :param text: .txt metadata file path
     """
     with open(infile, "rb") as f:
         a = f.read()
 
-    with open(text, "rb", ) as f:
+    with open(image, "rb", ) as f:
         b = f.read()
 
-    with open(image, "rb") as f:
+    with open(text, "rb") as f:
         c = f.read()
 
     all = a+b+c
