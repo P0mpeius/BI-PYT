@@ -1,5 +1,4 @@
-# INSERT_METADATA.PY
-
+# insert_metadata.py
 This script enables you to cut a stereoscopic .jpg image in half, add specific metadata and save in a new file. The specific metadata is:
 - a .png image
 - a .txt document
@@ -26,7 +25,7 @@ $ python insert_metadata.py arg1 arg2 arg3
 - the script will crash if you use a different number or order of arguments
 - do NOT rename the RESULT .jpg file, otherwise extract_metadata.py will not work
 
-# EXTRACT_METADATA.PY
+# extract_metadata.py
 Extracts back the metadata and cut-off image from the RESULT .jpg created by insert_metadata.py.
 ### usage:
 ```sh
