@@ -42,6 +42,8 @@ Extracts back the metadata and cut-off image from the RESULT .jpg created by ins
 ### Notes
 - the script will crash if you use a different number of arguments
 - the script will crash if the RESULT file is renamed
+
+
 # EXAMPLE: how to use with provided sample files
 ```sh
 $ python insert_metadata.py source_image.jpg image_metadata.png text_metadata.txt
