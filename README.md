@@ -27,7 +27,7 @@ $ python insert_metadata.py arg1 arg2 arg3
 
 # extract_metadata.py
 Extracts back the metadata and cut-off image from the RESULT .jpg created by insert_metadata.py.
-### Asage:
+### Usage:
 ```sh
 	$ python extract_metadata.py arg1
 ```
